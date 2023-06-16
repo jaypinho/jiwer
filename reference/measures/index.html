@@ -700,7 +700,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The reference sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The reference sentence(s)</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -710,7 +714,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The hypothesis sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The hypothesis sentence(s)</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -720,7 +728,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the reference string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the reference string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>cer_default</code>
           </td>
@@ -730,7 +742,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the hypothesis string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the hypothesis string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>cer_default</code>
           </td>
@@ -740,8 +756,12 @@ hypothesis sentences.</p>
           <td>
                 <code>bool</code>
           </td>
-          <td><p>Deprecated option to return the more results in a dict instead of
-         returning only the cer as a single float value</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated option to return the more results in a dict instead of
+         returning only the cer as a single float value</p>
+            </div>
+          </td>
           <td>
                 <code>False</code>
           </td>
@@ -751,7 +771,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>Deprecated, renamed to <code>reference</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated, renamed to <code>reference</code></p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -761,7 +785,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>Deprecated, renamed to <code>reference_transform</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated, renamed to <code>reference_transform</code></p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -769,7 +797,7 @@ hypothesis sentences.</p>
     </tbody>
   </table>
 
-<details class="deprecated">
+<details class="deprecated" open>
   <summary>Deprecated</summary>
   <p>Argument <code>return_dict</code> will be deprecated. Please use
 <a class="autorefs autorefs-internal" href="../process/#process.process_characters">jiwer.process_characters</a> instead.</p>
@@ -792,8 +820,12 @@ hypothesis sentences.</p>
           <td>
                 <code>float</code>
           </td>
-          <td><p>The character error rate of the given reference and hypothesis
-     sentence(s).</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The character error rate of the given reference and hypothesis
+     sentence(s).</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -968,7 +1000,7 @@ hypothesis sentences.</p>
   
       <p>Efficiently computes all measures using only one function call.</p>
 
-<details class="deprecated">
+<details class="deprecated" open>
   <summary>Deprecated</summary>
   <p>Deprecated method. Superseded by <a class="autorefs autorefs-internal" href="../process/#process.process_words">jiwer.process_words</a>.
 This method will be removed on next release.</p>
@@ -989,7 +1021,11 @@ This method will be removed on next release.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The reference sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The reference sentence(s)</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -999,7 +1035,11 @@ This method will be removed on next release.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The hypothesis sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The hypothesis sentence(s)</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1009,7 +1049,11 @@ This method will be removed on next release.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the reference string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the reference string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1019,7 +1063,11 @@ This method will be removed on next release.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the hypothesis string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the hypothesis string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1040,7 +1088,11 @@ This method will be removed on next release.</p>
           <td>
                 <code>dict</code>
           </td>
-          <td><p>A dictionary containing key-value pairs for all measures.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A dictionary containing key-value pairs for all measures.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1190,7 +1242,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The reference sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The reference sentence(s)</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1200,7 +1256,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The hypothesis sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The hypothesis sentence(s)</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1210,7 +1270,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the reference string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the reference string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1220,7 +1284,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the hypothesis string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the hypothesis string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1230,7 +1298,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>Deprecated, renamed to <code>reference</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated, renamed to <code>reference</code></p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1240,7 +1312,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>Deprecated, renamed to <code>reference_transform</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated, renamed to <code>reference_transform</code></p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1248,7 +1324,7 @@ hypothesis sentences.</p>
     </tbody>
   </table>
 
-<details class="deprecated">
+<details class="deprecated" open>
   <summary>Deprecated</summary>
   <p>Arguments <code>truth</code> and <code>truth_transform</code> have been renamed to respectively
 <code>reference</code> and <code>reference_transform</code>. Therefore, the keyword arguments
@@ -1269,8 +1345,12 @@ hypothesis sentences.</p>
           <td>
                 <code>float</code>
           </td>
-          <td><p>The match error rate of the given reference and
-     hypothesis sentence(s).</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The match error rate of the given reference and
+     hypothesis sentence(s).</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1422,7 +1502,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The reference sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The reference sentence(s)</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1432,7 +1516,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The hypothesis sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The hypothesis sentence(s)</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1442,7 +1530,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the reference string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the reference string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1452,7 +1544,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the hypothesis string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the hypothesis string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1462,7 +1558,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>Deprecated, renamed to <code>reference</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated, renamed to <code>reference</code></p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1472,7 +1572,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>Deprecated, renamed to <code>reference_transform</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated, renamed to <code>reference_transform</code></p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1480,7 +1584,7 @@ hypothesis sentences.</p>
     </tbody>
   </table>
 
-<details class="deprecated">
+<details class="deprecated" open>
   <summary>Deprecated</summary>
   <p>Arguments <code>truth</code> and <code>truth_transform</code> have been renamed to respectively
 <code>reference</code> and <code>reference_transform</code>. Therefore, the keyword arguments
@@ -1501,8 +1605,12 @@ hypothesis sentences.</p>
           <td>
                 <code>float</code>
           </td>
-          <td><p>The word error rate of the given reference and
-     hypothesis sentence(s).</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The word error rate of the given reference and
+     hypothesis sentence(s).</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1652,7 +1760,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The reference sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The reference sentence(s)</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1662,7 +1774,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The hypothesis sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The hypothesis sentence(s)</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1672,7 +1788,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the reference string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the reference string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1682,7 +1802,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the hypothesis string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the hypothesis string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1692,7 +1816,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>Deprecated, renamed to <code>reference</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated, renamed to <code>reference</code></p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1702,7 +1830,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>Deprecated, renamed to <code>reference_transform</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated, renamed to <code>reference_transform</code></p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1710,7 +1842,7 @@ hypothesis sentences.</p>
     </tbody>
   </table>
 
-<details class="deprecated">
+<details class="deprecated" open>
   <summary>Deprecated</summary>
   <p>Arguments <code>truth</code> and <code>truth_transform</code> have been renamed to respectively
 <code>reference</code> and <code>reference_transform</code>. Therefore, the keyword arguments
@@ -1731,8 +1863,12 @@ hypothesis sentences.</p>
           <td>
                 <code>float</code>
           </td>
-          <td><p>The word information lost of the given reference and
-     hypothesis sentence(s).</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The word information lost of the given reference and
+     hypothesis sentence(s).</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1884,7 +2020,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The reference sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The reference sentence(s)</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1894,7 +2034,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The hypothesis sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The hypothesis sentence(s)</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1904,7 +2048,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the reference string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the reference string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1914,7 +2062,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the hypothesis string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the hypothesis string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1924,7 +2076,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>Deprecated, renamed to <code>reference</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated, renamed to <code>reference</code></p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1934,7 +2090,11 @@ hypothesis sentences.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>Deprecated, renamed to <code>reference_transform</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deprecated, renamed to <code>reference_transform</code></p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1942,7 +2102,7 @@ hypothesis sentences.</p>
     </tbody>
   </table>
 
-<details class="deprecated">
+<details class="deprecated" open>
   <summary>Deprecated</summary>
   <p>Arguments <code>truth</code> and <code>truth_transform</code> have been renamed to respectively
 <code>reference</code> and <code>reference_transform</code>. Therefore, the keyword arguments
@@ -1963,8 +2123,12 @@ hypothesis sentences.</p>
           <td>
                 <code>float</code>
           </td>
-          <td><p>The word information preserved of the given reference and
-     hypothesis sentence(s).</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The word information preserved of the given reference and
+     hypothesis sentence(s).</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

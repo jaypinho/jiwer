@@ -1138,7 +1138,11 @@ composition of multiple transformations must therefore also always end with
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The strings to transform.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The strings to transform.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1159,7 +1163,11 @@ composition of multiple transformations must therefore also always end with
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The transformed strings.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformed strings.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1243,7 +1251,7 @@ transformations.</p>
 or <code>ReduceToListOfListOfChars</code>, depending on whether word error rate,
 or character error rate is desired.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -1367,7 +1375,11 @@ or character error rate is desired.</p>
           <td>
                 <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="transforms.AbstractTransform" href="#transforms.AbstractTransform">AbstractTransform</a>]</code>
           </td>
-          <td><p>The list of transformations to chain.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The list of transformations to chain.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1478,7 +1490,7 @@ or character error rate is desired.</p>
 </tbody>
 </table>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -1639,7 +1651,7 @@ edit operations between two input sentences on a character-level.</p>
 <p>A sentence is assumed to be a string. Each string is expected to contain only a
 single sentence.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -1767,7 +1779,7 @@ edit operations between two input sentences on a word-level.</p>
 (such as <code></code>, space). Each string is expected to contain only a single sentence.
 Empty strings (no output) are removed for the list.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -1911,7 +1923,11 @@ Empty strings (no output) are removed for the list.</p>
           <td>
                 <code>str</code>
           </td>
-          <td><p>the character which delimits words. Default is <code></code> (space).</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>the character which delimits words. Default is <code></code> (space).</p>
+            </div>
+          </td>
           <td>
                 <code>&#39; &#39;</code>
           </td>
@@ -1968,7 +1984,7 @@ differ, and you want to do a minimal alignment over these lists.
 Note that this creates an invariance: <code>wer([a, b], [a, b])</code> might not be equal to
 <code>wer([b, a], [b, a])</code>.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -2124,7 +2140,7 @@ Note that this creates an invariance: <code>wer([a, b], [a, b])</code> might not
   
       <p>Remove empty strings from a list of strings.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -2219,7 +2235,7 @@ Note that this creates an invariance: <code>wer([a, b], [a, b])</code> might not
 with hypotheses from the Kaldi project, which can output non-words such as
 <code>[laugh]</code> and <code>&lt;unk&gt;</code>.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -2316,7 +2332,7 @@ with hypotheses from the Kaldi project, which can output non-words such as
   
       <p>Filter out multiple spaces between words.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -2417,7 +2433,7 @@ all unicode characters whose category name starts with <code>P</code>.
 See <a href="https://www.unicode.org/reports/tr44/#General_Category_Values">here</a> for more
 information.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -2513,7 +2529,7 @@ As words are replaced with a <code></code> character, make sure to that
 <code>RemoveMultipleSpaces</code>, <code>Strip()</code> and <code>RemoveEmptyStrings</code> are present
 in the composition <em>after</em> <code>RemoveSpecificWords</code>.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -2626,7 +2642,11 @@ in the composition <em>after</em> <code>RemoveSpecificWords</code>.</p>
           <td>
                 <code><span title="typing.List">List</span>[str]</code>
           </td>
-          <td><p>List of words to remove.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of words to remove.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -2690,7 +2710,7 @@ If so, make sure that <code>jiwer.RemoveMultipleSpaces</code>,
 <code>Strip()</code> and <code>RemoveEmptyStrings</code> are present in the composition <em>after</em>
 <code>RemoveWhiteSpace</code>.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -2832,7 +2852,11 @@ If so, make sure that <code>jiwer.RemoveMultipleSpaces</code>,
           <td>
                 <code>bool</code>
           </td>
-          <td><p>every white space character is replaced with a space (<code></code>)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>every white space character is replaced with a space (<code></code>)</p>
+            </div>
+          </td>
           <td>
                 <code>False</code>
           </td>
@@ -2901,7 +2925,7 @@ If so, make sure that <code>jiwer.RemoveMultipleSpaces</code>,
   
       <p>Removes all leading and trailing spaces.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -2992,7 +3016,7 @@ If so, make sure that <code>jiwer.RemoveMultipleSpaces</code>,
       <p>Transform strings by substituting substrings matching regex expressions into
 another substring.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -3117,7 +3141,11 @@ another substring.</p>
           <td>
                 <code><span title="typing.Mapping">Mapping</span>[str, str]</code>
           </td>
-          <td><p>a mapping of regex expressions to replacement strings.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>a mapping of regex expressions to replacement strings.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -3176,7 +3204,7 @@ is a substring of another word it will not be affected.
 For example, if you're substituting <code>foo</code> into <code>bar</code>, the word <code>foobar</code> will NOT
 be substituted into <code>barbar</code>.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -3301,7 +3329,11 @@ be substituted into <code>barbar</code>.</p>
           <td>
                 <code><span title="typing.Mapping">Mapping</span>[str, str]</code>
           </td>
-          <td><p>A mapping of words to replacement words.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A mapping of words to replacement words.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -3354,7 +3386,7 @@ be substituted into <code>barbar</code>.</p>
   
       <p>Convert every character into lowercase.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 
@@ -3442,7 +3474,7 @@ be substituted into <code>barbar</code>.</p>
   
       <p>Convert every character to uppercase.</p>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
 

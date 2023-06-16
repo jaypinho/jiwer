@@ -658,35 +658,55 @@ so that measures can be computed and an alignment can be visualized.</p>
           <td>
                 <code>str</code>
           </td>
-          <td><p>one of <code>equal</code>, <code>substitute</code>, <code>insert</code>, or <code>delete</code></p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>one of <code>equal</code>, <code>substitute</code>, <code>insert</code>, or <code>delete</code></p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>ref_start_idx</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>the start index of the reference subsequence</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>the start index of the reference subsequence</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>ref_end_idx</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>the end index of the reference subsequence</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>the end index of the reference subsequence</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>hyp_start_idx</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>the start index of the hypothesis subsequence</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>the start index of the hypothesis subsequence</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>hyp_end_idx</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>the end index of the hypothesis subsequence</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>the end index of the hypothesis subsequence</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -834,60 +854,92 @@ more reference and hypothesis sentence(s).</p>
           <td>
                 <code><span title="typing.List">List</span>[<span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The reference sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The reference sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>hypotheses</code></td>
           <td>
                 <code><span title="typing.List">List</span>[<span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The hypothesis sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The hypothesis sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>alignments</code></td>
           <td>
                 <code><span title="typing.List">List</span>[<span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="process.AlignmentChunk" href="#process.AlignmentChunk">AlignmentChunk</a>]]</code>
           </td>
-          <td><p>The alignment between reference and hypothesis sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The alignment between reference and hypothesis sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cer</code></td>
           <td>
                 <code>float</code>
           </td>
-          <td><p>The character error rate</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The character error rate</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>hits</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>The number of correct characters between reference and hypothesis
-  sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The number of correct characters between reference and hypothesis
+  sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>substitutions</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>The number of substitutions required to transform hypothesis
-           sentences to reference sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The number of substitutions required to transform hypothesis
+           sentences to reference sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>insertions</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>The number of insertions required to transform hypothesis
-           sentences to reference sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The number of insertions required to transform hypothesis
+           sentences to reference sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>deletions</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>The number of deletions required to transform hypothesis
-           sentences to reference sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The number of deletions required to transform hypothesis
+           sentences to reference sentences</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1025,80 +1077,124 @@ reference and hypothesis sentence(s).</p>
           <td>
                 <code><span title="typing.List">List</span>[<span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The reference sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The reference sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>hypotheses</code></td>
           <td>
                 <code><span title="typing.List">List</span>[<span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The hypothesis sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The hypothesis sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>alignments</code></td>
           <td>
                 <code><span title="typing.List">List</span>[<span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="process.AlignmentChunk" href="#process.AlignmentChunk">AlignmentChunk</a>]]</code>
           </td>
-          <td><p>The alignment between reference and hypothesis sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The alignment between reference and hypothesis sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>wer</code></td>
           <td>
                 <code>float</code>
           </td>
-          <td><p>The word error rate</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The word error rate</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>mer</code></td>
           <td>
                 <code>float</code>
           </td>
-          <td><p>The match error rate</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The match error rate</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>wil</code></td>
           <td>
                 <code>float</code>
           </td>
-          <td><p>The word information lost measure</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The word information lost measure</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>wip</code></td>
           <td>
                 <code>float</code>
           </td>
-          <td><p>The word information preserved measure</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The word information preserved measure</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>hits</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>The number of correct words between reference and hypothesis sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The number of correct words between reference and hypothesis sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>substitutions</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>The number of substitutions required to transform hypothesis
-           sentences to reference sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The number of substitutions required to transform hypothesis
+           sentences to reference sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>insertions</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>The number of insertions required to transform hypothesis
-           sentences to reference sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The number of insertions required to transform hypothesis
+           sentences to reference sentences</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>deletions</code></td>
           <td>
                 <code>int</code>
           </td>
-          <td><p>The number of deletions required to transform hypothesis
-           sentences to reference sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The number of deletions required to transform hypothesis
+           sentences to reference sentences</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1255,7 +1351,11 @@ reference and hypothesis transform need to be modified.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The reference sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The reference sentence(s)</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1265,7 +1365,11 @@ reference and hypothesis transform need to be modified.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The hypothesis sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The hypothesis sentence(s)</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1275,7 +1379,11 @@ reference and hypothesis transform need to be modified.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the reference string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the reference string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>cer_default</code>
           </td>
@@ -1285,7 +1393,11 @@ reference and hypothesis transform need to be modified.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the hypothesis string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the hypothesis string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>cer_default</code>
           </td>
@@ -1306,7 +1418,11 @@ reference and hypothesis transform need to be modified.</p>
           <td>
                 <code><a class="autorefs autorefs-internal" title="process.CharacterOutput" href="#process.CharacterOutput">CharacterOutput</a></code>
           </td>
-          <td><p>The processed reference and hypothesis sentences.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The processed reference and hypothesis sentences.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1441,7 +1557,11 @@ can be computed, such as the word error rate.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The reference sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The reference sentence(s)</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1451,7 +1571,11 @@ can be computed, such as the word error rate.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
           </td>
-          <td><p>The hypothesis sentence(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The hypothesis sentence(s)</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1461,7 +1585,11 @@ can be computed, such as the word error rate.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the reference string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the reference string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1471,7 +1599,11 @@ can be computed, such as the word error rate.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.Compose">Compose</span>, <span title="jiwer.transforms">tr</span>.<span title="jiwer.transforms.AbstractTransform">AbstractTransform</span>]</code>
           </td>
-          <td><p>The transformation(s) to apply to the hypothesis string(s)</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The transformation(s) to apply to the hypothesis string(s)</p>
+            </div>
+          </td>
           <td>
                 <code>wer_default</code>
           </td>
@@ -1492,7 +1624,11 @@ can be computed, such as the word error rate.</p>
           <td>
                 <code><a class="autorefs autorefs-internal" title="process.WordOutput" href="#process.WordOutput">WordOutput</a></code>
           </td>
-          <td><p>The processed reference and hypothesis sentences</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The processed reference and hypothesis sentences</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

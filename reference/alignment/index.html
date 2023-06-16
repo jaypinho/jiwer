@@ -577,7 +577,9 @@ pairs.</p>
 
 
 <a href="#alignment.visualize_alignment" class="headerlink" title="Permanent link">#</a></h3>
-<div class="highlight"><pre><span></span><code><span class="n">visualize_alignment</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">show_measures</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">visualize_alignment</span><span class="p">(</span>
+    <span class="n">output</span><span class="p">,</span> <span class="n">show_measures</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">skip_correct</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
 </code></pre></div>
 
   <div class="doc doc-contents ">
@@ -604,7 +606,11 @@ output.</p>
           <td>
                 <code><span title="typing.Union">Union</span>[<span title="jiwer.process.WordOutput">WordOutput</span>, <span title="jiwer.process.CharacterOutput">CharacterOutput</span>]</code>
           </td>
-          <td><p>The processed output of reference and hypothesis pair(s).</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The processed output of reference and hypothesis pair(s).</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -614,8 +620,26 @@ output.</p>
           <td>
                 <code>bool</code>
           </td>
-          <td><p>If enabled, the visualization will include measures like the WER
-           or CER</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>If enabled, the visualization will include measures like the WER
+           or CER</p>
+            </div>
+          </td>
+          <td>
+                <code>True</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>skip_correct</code></td>
+          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>If enabled, the visualization will exclude correct reference and hypothesis pairs</p>
+            </div>
+          </td>
           <td>
                 <code>True</code>
           </td>
@@ -636,12 +660,16 @@ output.</p>
           <td>
                 <code>str</code>
           </td>
-          <td><p>The visualization as a string</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The visualization as a string</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
 
-<details class="example">
+<details class="example" open>
   <summary>Example</summary>
   <p>This code snippet
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">jiwer</span>
@@ -782,8 +810,16 @@ HYP: quite * bit of an even longest sentence here
 <span class="normal">125</span>
 <span class="normal">126</span>
 <span class="normal">127</span>
-<span class="normal">128</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">visualize_alignment</span><span class="p">(</span>
-    <span class="n">output</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">WordOutput</span><span class="p">,</span> <span class="n">CharacterOutput</span><span class="p">],</span> <span class="n">show_measures</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">visualize_alignment</span><span class="p">(</span>
+    <span class="n">output</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">WordOutput</span><span class="p">,</span> <span class="n">CharacterOutput</span><span class="p">],</span>
+    <span class="n">show_measures</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">skip_correct</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Visualize the output of [jiwer.process_words][process.process_words] and</span>
@@ -796,6 +832,7 @@ HYP: quite * bit of an even longest sentence here
 <span class="sd">        output: The processed output of reference and hypothesis pair(s).</span>
 <span class="sd">        show_measures: If enabled, the visualization will include measures like the WER</span>
 <span class="sd">                       or CER</span>
+<span class="sd">        skip_correct: If enabled, the visualization will exclude correct reference and hypothesis pairs</span>
 
 <span class="sd">    Returns:</span>
 <span class="sd">        (str): The visualization as a string</span>
@@ -854,6 +891,9 @@ HYP: quite * bit of an even longest sentence here
 
     <span class="n">final_str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
     <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="p">(</span><span class="n">gt</span><span class="p">,</span> <span class="n">hp</span><span class="p">,</span> <span class="n">chunks</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">references</span><span class="p">,</span> <span class="n">hypothesis</span><span class="p">,</span> <span class="n">alignment</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">skip_correct</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunks</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s2">&quot;equal&quot;</span><span class="p">:</span>
+            <span class="k">continue</span>
+
         <span class="n">final_str</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;sentence </span><span class="si">{</span><span class="n">idx</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
         <span class="n">final_str</span> <span class="o">+=</span> <span class="n">_construct_comparison_string</span><span class="p">(</span>
             <span class="n">gt</span><span class="p">,</span> <span class="n">hp</span><span class="p">,</span> <span class="n">chunks</span><span class="p">,</span> <span class="n">include_space_seperator</span><span class="o">=</span><span class="ow">not</span> <span class="n">is_cer</span>
